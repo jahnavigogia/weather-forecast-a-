@@ -10,4 +10,6 @@ data = st.selectbox("Select data to view", options=("Sky", "Temperature"))
 st.subheader(f"{data} for the next {days} days in {place}")
 
 figure = px.line(x=date, y, )
-st.plotly_chart()
+st.plotly_chart(figure)
+
+
